@@ -101,29 +101,19 @@ Harian (CRUD) - Dashboard Statistik - Halaman Profil Pengguna
 
     -   XAMPP: htdocs
     -   Laragon: www
+    -   Atau folder penempatan yang diinginkan
 
 2.  Install dependency: composer install
 
-3.  Copy file environment: cp .env.example .env
+3.  Atur koneksi database di file .env
 
-4.  Generate app key: php artisan key:generate
+4.  Jalankan migrate database: php artisan migrate
 
-5.  Atur koneksi database di file .env
+5.  Jalankan server: php artisan serve
 
-6.  Jalankan migrate database: php artisan migrate
-
-7.  Jalankan server: php artisan serve
-
-8.  Akses di browser: http://127.0.0.1:8000
+6.  Akses di browser: http://127.0.0.1:8000
 
 ## 7. Hak Akses
 
 -   Admin dapat mengelola kategori dan catatan
 -   Admin dapat melihat dashboard dan profil
-
-## 8. Penutup
-
-Dokumentasi ini dibuat untuk membantu memahami struktur dan penggunaan
-aplikasi Catatan Harian berbasis Laravel dan AdminLTE. Dokumentasi ini
-dapat dikembangkan kembali sesuai dengan fitur tambahan di masa
-mendatang.
